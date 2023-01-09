@@ -2,8 +2,10 @@ package com.example.myapplicationlogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().equals("Tshifhiwa") && password.getText().toString().equals("admin"))
+                if (username.getText().toString().equals("1") && password.getText().toString().equals("1"))
                 {
                     //Correct
                     Toast.makeText(MainActivity.this,"Login Successful",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this,Homepage.class);
+                    startActivity(intent);
                 }
                 else
                     //incorrect

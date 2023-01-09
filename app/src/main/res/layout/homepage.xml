@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:layout_below="@id/forgetPassword"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="303dp"
+    android:layout_marginEnd="00dp"
+    android:layout_marginBottom="3dp"
+    android:background="@color/teal_200">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_baseline_home_24"></ImageView>
+
+        <ImageView
+            android:id="@+id/favourites"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/home"
+            android:src="@drawable/ic_baseline_favorite_24"></ImageView>
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/favourites"
+            android:src="@drawable/ic_baseline_settings_24"></ImageView>
+
+
+    </LinearLayout>
+
+</com.google.android.material.bottomnavigation.BottomNavigationView>
+
+<TextView
+    android:id="@+id/forgetPassword"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginStart="280dp"
+
+    android:layout_marginTop="254dp"
+    android:text="Forget Password" />
+
+<TextView
+    android:id="@+id/register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/forgetPassword"
+
+    android:layout_marginStart="38dp"
+    android:layout_marginTop="279dp"
+    android:layout_marginEnd="379dp"
+
+
+    android:layout_marginBottom="3dp"
+    android:text="Register" />
+
+
+    </RelativeLayout>
